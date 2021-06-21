@@ -26,7 +26,7 @@
 
    [2) Background Changer](./mini_web_projects/BackgroundChanger) 
 
-   [3) Carousel](./mini_web_projects/Carousel_Boilerplate)
+   [3) Carousel](./mini_web_projects/Carousel)
 
    [4) Calendar](./mini_web_projects/Calendar_Boilerplate) 
 
