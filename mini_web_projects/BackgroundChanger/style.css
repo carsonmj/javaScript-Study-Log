@@ -1,0 +1,9 @@
+body {
+    height: 100vh;
+    background: #22211fb6;
+    color: rgb(39, 39, 39);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

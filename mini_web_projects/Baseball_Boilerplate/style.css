@@ -1,0 +1,27 @@
+body {
+  background-image: url("./images/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Varela Round", sans-serif;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 72px;
+}
+
+table {
+  width: 50vw;
+  border: 1px solid #606060;
+  border-collapse: collapse;
+}
+
+/* tr {
+} */
+
+th, td {
+  border: 1px solid #606060;
+  width: 10vw;
+  padding: 0.5rem;
+}
