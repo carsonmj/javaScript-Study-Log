@@ -2,7 +2,7 @@
 <br>
  
 ## Folder Structure
-- [algorithm](./algorithm)
+- [lgorithm](./algorithm)
 
    [1) 서울에서 김서방 찾기](./algorithm/programmers/서울에서김서방찾기.js) 
 
