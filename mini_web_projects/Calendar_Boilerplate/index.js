@@ -58,7 +58,15 @@ const showCalendar = () => {
 
     document.querySelector('.calendar').id = `${date.getFullYear()} ${date.getMonth()}`;
     document.querySelector('.selectedDay').innerHTML = `${days[date.getDay()]} <br> ${date.getDate()} <br><br> ${months[date.getMonth()]} ${date.getFullYear()}`;
+
+    const dayDivs = document.querySelectorAll('.dates>div');
+    console.log(dayDivs);
+    dayDivs.forEach( div => {   console.log(div);
+        div.addEventListener('click', (e) => { console.log(e); onClickDay(e); })
+    });
 };
+
+
 
 document.querySelector('.prev').addEventListener('click', () => {
     date.setMonth(date.getMonth() - 1);
@@ -72,9 +80,50 @@ document.querySelector('.next').addEventListener('click', () => {
     showCalendar();
 });
 
-document.querySelector('.dates').addEventListener('click', (e) => {
+
+
+
+
+
+
+
+
+// document.querySelectorAll('.dates > div').addEventListener('click', (e) => {
+//     const yearNmonth = document.querySelector('.calendar').id.split(' ');
+//     const date = e.target.textContent;
+
+    
+//     console.log('yearNmonth-> ', yearNmonth);
+//     console.log('date-> ', date);
+
+
+//     if(!date || !yearNmonth){
+//         return;
+//     }
+
+
+//     const selectedDate = new Date();
+//     selectedDate.setFullYear(yearNmonth[0]);
+//     selectedDate.setMonth(yearNmonth[1]);
+//     selectedDate.setDate(date);
+
+//     document.querySelector('.selectedDay').innerHTML = `${days[selectedDate.getDay()]} <br> ${selectedDate.getDate()} <br><br> ${months[selectedDate.getMonth()]} ${selectedDate.getFullYear()}`;
+// });
+
+
+function onClickDay(e) {
     const yearNmonth = document.querySelector('.calendar').id.split(' ');
     const date = e.target.textContent;
+
+    
+    console.log('yearNmonth-> ', yearNmonth);
+    console.log('date-> ', date);
+
+
+    if(!date || !yearNmonth){
+        return;
+    }
+
 
     const selectedDate = new Date();
     selectedDate.setFullYear(yearNmonth[0]);
@@ -82,6 +131,6 @@ document.querySelector('.dates').addEventListener('click', (e) => {
     selectedDate.setDate(date);
 
     document.querySelector('.selectedDay').innerHTML = `${days[selectedDate.getDay()]} <br> ${selectedDate.getDate()} <br><br> ${months[selectedDate.getMonth()]} ${selectedDate.getFullYear()}`;
-});
+}
 
 showCalendar();

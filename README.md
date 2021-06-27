@@ -31,3 +31,26 @@
    [4) Calendar](./mini_web_projects/Calendar_Boilerplate) 
 
    [5) Number Baseball](./mini_web_projects/Baseball_Boilerplate)
+
+<br>
+
+- [JavaScript Koans](./javascript-koans-master)
+
+   [1) About Expects](./javascript-koans-master/koans/AboutExpects.js)
+
+   [2) About Arrays](./javascript-koans-master/koans/AboutArrays.js)
+
+   [3) About Functions](./javascript-koans-master/koans/AboutFunctions.js)
+
+   [4) About Objects](./javascript-koans-master/koans/AboutObjects.js)
+
+   [5) About Mutability](./javascript-koans-master/koans/AboutMutability.js)
+
+   [6) About Higher Order Functions](./javascript-koans-master/koans/AboutHigherOrderFunctions.js)
+
+   [7) About inheritance](./javascript-koans-master/koans/AboutInheritance.js)
+
+   [8) About Applying What We Have Learnt](./javascript-koans-master/koans/AboutApplyingWhatWeHaveLearnt.js)
+
+   <img src="./img/Javascript_Koans.png" style="width: 400px">
+   

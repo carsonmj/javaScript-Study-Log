@@ -23,6 +23,7 @@ function checkValidation(num) {
 
 // strike & ball 체크
 function getResult(num) {
+    console.log('------->', randomNum);
     let userNum = num.split('');
     let result = {
         strike: 0,
