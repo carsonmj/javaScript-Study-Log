@@ -2,7 +2,7 @@
 <br>
  
 ## Folder Structure
-- [algorithm](./algorithm)
+- [Algorithm](./algorithm)
 
    [1) 서울에서 김서방 찾기](./algorithm/programmers/서울에서김서방찾기.js) 
 
@@ -31,6 +31,7 @@
    [4) Calendar](./mini_web_projects/Calendar_Boilerplate) 
 
    [5) Number Baseball](./mini_web_projects/Baseball_Boilerplate)
+<<<<<<< HEAD
 
 <br>
 
@@ -54,3 +55,5 @@
 
    <img src="./img/Javascript_Koans.png" style="width: 400px">
    
+=======
+>>>>>>> 1698ea347f2fb54ca29d97f3ced60ee7eed032a3
