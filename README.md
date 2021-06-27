@@ -31,7 +31,6 @@
    [4) Calendar](./mini_web_projects/Calendar_Boilerplate) 
 
    [5) Number Baseball](./mini_web_projects/Baseball_Boilerplate)
-<<<<<<< HEAD
 
 <br>
 
@@ -53,7 +52,4 @@
 
    [8) About Applying What We Have Learnt](./javascript-koans-master/koans/AboutApplyingWhatWeHaveLearnt.js)
 
-   <img src="./img/Javascript_Koans.png" style="width: 400px">
-   
-=======
->>>>>>> 1698ea347f2fb54ca29d97f3ced60ee7eed032a3
+   <img src="./img/Javascript_Koans.png" style="width: 300px">
