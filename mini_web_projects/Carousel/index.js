@@ -6,22 +6,22 @@ const OBJ_ARRAY = [
     { dot : 'dot5', img : 'image-5.png' },
 ];
 
-// dot 클릭 시
+// Click dot
 function onClickDot(id) {
     const selectedIdx = OBJ_ARRAY.findIndex( idx => idx.dot === id);
     showImgDot(OBJ_ARRAY[selectedIdx].dot, OBJ_ARRAY[selectedIdx].img);
 }
 
 
-// arrow 클릭 시
+// Click arrow
 function onClickArrow(direction) {
 
-    // 현재 이미지 파일명
+    // current img file name
     const imgSrc = document.querySelector('.showedImg').src.replace(/^.*\//, '');
-    // index값
+    // index value
     const prevIdx = OBJ_ARRAY.findIndex( idx => idx.img === imgSrc);
 
-    // prev, next 구분
+    // prev, next
     if(direction === 'prev'){
         if(prevIdx === 0){
             return;
@@ -37,7 +37,7 @@ function onClickArrow(direction) {
     }
 }
 
-// 해당 dot과 해당 img 보여주기
+// Show the image and dot
 function showImgDot(curDot, curImg) {
 
     const dots = document.querySelectorAll('.dot');
@@ -53,7 +53,7 @@ function showImgDot(curDot, curImg) {
     document.querySelector(`#${curDot}`).style.background = '#cbc7c7';
 }
 
-// Arrow 이벤트 리스너
+// Arrow Event Listener
 function setArrowEventListener() {
     const prev = document.querySelector('.prev');
     prev.addEventListener('click', () => onClickArrow('prev'));
@@ -62,7 +62,7 @@ function setArrowEventListener() {
     next.addEventListener('click', () => onClickArrow('next'));
 }
 
-// Dot 이벤트 리스너
+// Dot Event Listener
 function setDotEventListener() {
     const dots = document.querySelectorAll('.dot');
     dots.forEach( dot =>{

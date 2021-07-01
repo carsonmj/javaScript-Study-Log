@@ -1,6 +1,6 @@
 let randomNum = [];
 
-// random 3자리수 생성
+// Generate a random 3-digit number
 function getRandomNum() {
     let arrNum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     randomNum = [];
@@ -13,7 +13,7 @@ function getRandomNum() {
         
 }
 
-// 사용자가 입력한 값이 세자리 숫자가 아닌 경우 경고창
+// Warning if the value i not 3-digit number
 function checkValidation(num) {
     if(num.length !== 3){
         alert('세자리의 숫자를 입력해주세요.');
@@ -21,7 +21,7 @@ function checkValidation(num) {
     }
 }
 
-// strike & ball 체크
+// Check strike & ball
 function getResult(num) {
     console.log('------->', randomNum);
     let userNum = num.split('');
@@ -40,7 +40,7 @@ function getResult(num) {
     return result;
 }
 
-// 게임 시작
+// game start
 const button = document.querySelector('.start');
 const info = document.querySelector('#info');
 button.addEventListener('click', ()=>{
@@ -50,7 +50,7 @@ button.addEventListener('click', ()=>{
     getRandomNum();
 });
 
-// 게임 재시작
+// game restart
 document.querySelector('.restart').addEventListener('click', ()=>{
     reset();
     getRandomNum();
@@ -79,18 +79,15 @@ document.querySelector('form').addEventListener('submit', (e)=>{
     }
     createTableTexts(userNum, result);
     if(result.strike === 3){
-        alert(`게임에서 승리하셨습니다.
-            정답 : ${userNum}
-        `);
+        alert(`게임에서 승리하셨습니다. 정답 : ${userNum}`);
         reset();
         return;
     }
 });
 
-
+// Create text to be entered into table
 function createTableTexts(userNum, result) {
     let round = document.querySelector('#round').value;
-    // console.log('result: ', result, 'userNum : ', userNum, 'round : ', round);
 
     let trs = document.getElementById('tbody').getElementsByTagName('tr');
     let tr = trs[round-1];
@@ -102,7 +99,7 @@ function createTableTexts(userNum, result) {
     document.querySelector('#answer').value = '';
 }
 
-// 리셋
+// reset
 function reset() {
     document.querySelector('#round').value = '1';
 
